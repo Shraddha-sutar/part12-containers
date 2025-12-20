@@ -1,0 +1,54 @@
+Script started on 2025-12-20 09:13:36+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;ai@LAPTOP-LT9268J3: /mnt/d/Shraddha/UTG_course/part12-containers-applications[01;32mai@LAPTOP-LT9268J3[00m:[01;34m/mnt/d/Shraddha/UTG_course/part12-containers-applications[00m$ [7mls script-answers[27mls script-answers
+[?2004l[0m[01;32mexercise12_1.txt[0m  [01;32mexercise12_2.txt[0m
+[?2004h]0;ai@LAPTOP-LT9268J3: /mnt/d/Shraddha/UTG_course/part12-containers-applications[01;32mai@LAPTOP-LT9268J3[00m:[01;34m/mnt/d/Shraddha/UTG_course/part12-containers-applications[00m$ [7mgit status[27m
+[7mgit add script-answers/exercise12_2.txt[27m
+[7mgit commit -m "Exercise 12.2 completed"[27m
+[7mgit push[27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status
+git add script-answers/exercise12_2.txt
+git commit -m "Exercise 12.2 completed"
+git push
+[K[A[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   script-answers/exercise12_1.txt[m
+	[31mmodified:   todo-app/old-todo-frontend/.gitignore[m
+	[31mmodified:   todo-app/old-todo-frontend/README.md[m
+	[31mmodified:   todo-app/old-todo-frontend/package-lock.json[m
+	[31mmodified:   todo-app/old-todo-frontend/package.json[m
+	[31mmodified:   todo-app/old-todo-frontend/public/index.html[m
+	[31mmodified:   todo-app/old-todo-frontend/public/manifest.json[m
+	[31mmodified:   todo-app/old-todo-frontend/public/robots.txt[m
+	[31mmodified:   todo-app/old-todo-frontend/src/App.css[m
+	[31mmodified:   todo-app/old-todo-frontend/src/App.js[m
+	[31mmodified:   todo-app/old-todo-frontend/src/Todos/Form.js[m
+	[31mmodified:   todo-app/old-todo-frontend/src/Todos/List.js[m
+	[31mmodified:   todo-app/old-todo-frontend/src/Todos/TodoView.js[m
+	[31mmodified:   todo-app/old-todo-frontend/src/index.css[m
+	[31mmodified:   todo-app/old-todo-frontend/src/index.js[m
+	[31mmodified:   todo-app/old-todo-frontend/src/setupTests.js[m
+	[31mmodified:   todo-app/old-todo-frontend/src/util/apiClient.js[m
+	[31mmodified:   todo-app/todo-backend/.gitignore[m
+	[31mmodified:   todo-app/todo-backend/README.md[m
+	[31mmodified:   todo-app/todo-backend/app.js[m
+	[31mmodified:   todo-app/todo-backend/bin/www[m
+	[31mmodified:   todo-app/todo-backend/mongo/index.js[m
+	[31mmodified:   todo-app/todo-backend/mongo/models/Todo.js[m
+	[31mmodified:   todo-app/todo-backend/mongo/mongo-init.js[m
+	[31mmodified:   todo-app/todo-backend/package-lock.json[m
+	[31mmodified:   todo-app/todo-backend/package.json[m
+	[31mmodified:   todo-app/todo-backend/redis/index.js[m
+	[31mmodified:   todo-app/todo-backend/routes/index.js[m
+	[31mmodified:   todo-app/todo-backend/routes/todos.js[m
+	[31mmodified:   todo-app/todo-backend/util/config.js[m
+	[31mmodified:   todo-app/todo-frontend/.eslintrc.cjs[m
+	[31mmodified:   todo-app/todo-frontend/.gitignore[m
+	[31mmodified:   todo-a
