@@ -9,7 +9,7 @@ const TodoView = () => {
 
   const refreshTodos = async () => {
     const { data } = await axios.get('/todos')
-    setTodos(data)
+    setTodos(data.todos) // ✅ FIX
   }
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const TodoView = () => {
 
   const createTodo = async (todo) => {
     const { data } = await axios.post('/todos', todo)
-    setTodos([...todos, data])
+    setTodos(data.todos) // ✅ FIX
   }
 
   const deleteTodo = async (todo) => {
@@ -38,7 +38,11 @@ const TodoView = () => {
     <>
       <h1>Todos</h1>
       <Form createTodo={createTodo} />
-      <List todos={todos} deleteTodo={deleteTodo} completeTodo={completeTodo} />
+      <List
+        todos={todos}
+        deleteTodo={deleteTodo}
+        completeTodo={completeTodo}
+      />
     </>
   )
 }

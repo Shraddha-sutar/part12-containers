@@ -1,12 +1,8 @@
 import React from 'react'
 
-const TodoList = ({ todos, deleteTodo, completeTodo }) => {
-  const onClickDelete = (todo) => () => {
-    deleteTodo(todo)
-  }
-
-  const onClickComplete = (todo) => () => {
-    completeTodo(todo)
+const TodoList = ({ todos = [], deleteTodo, completeTodo }) => {
+  if (!Array.isArray(todos)) {
+    return <div>No todos</div>
   }
 
   return (
@@ -16,32 +12,36 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
           <>
             <span>This todo is done</span>
             <span>
-              <button onClick={onClickDelete(todo)}> Delete </button>
+              <button onClick={() => deleteTodo(todo)}>Delete</button>
             </span>
           </>
         )
 
         const notDoneInfo = (
           <>
+            <span>This todo is not done</span>
             <span>
-              This todo is not done
-            </span>
-            <span>
-              <button onClick={onClickDelete(todo)}> Delete </button>
-              <button onClick={onClickComplete(todo)}> Set as done </button>
+              <button onClick={() => deleteTodo(todo)}>Delete</button>
+              <button onClick={() => completeTodo(todo)}>Set as done</button>
             </span>
           </>
         )
 
         return (
-          <div style={{ display: 'flex', justifyContent: 'space-between', maxWidth: '70%', margin: 'auto' }}>
-            <span>
-              {todo.text} 
-            </span>
+          <div
+            key={todo._id}
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              maxWidth: '70%',
+              margin: 'auto'
+            }}
+          >
+            <span>{todo.text}</span>
             {todo.done ? doneInfo : notDoneInfo}
           </div>
         )
-      }).reduce((acc, cur) => [...acc, <hr />, cur], [])}
+      }).reduce((acc, cur) => [...acc, <hr key={Math.random()} />, cur], [])}
     </>
   )
 }
