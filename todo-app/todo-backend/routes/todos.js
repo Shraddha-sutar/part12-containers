@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Todo = require('../models/todo'); // तुमचा Todo model
+const Todo = require('../models/todo'); // Todo model
 const { incrAsync } = require('../util/redis');
 
 // Create a new Todo
